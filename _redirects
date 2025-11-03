@@ -1,0 +1,12 @@
+# Redirect old URLs to new ones
+/old-blog/*          /blog/:splat          301
+/github              https://github.com/z-varun  302
+/linkedin            https://linkedin.com/in/varun-bhandari5  302
+/resume              /assets/files/VarunBhandari-8Yrs-DevSecOps.pdf    302
+
+# Force HTTPS
+http://varunbhandari.in/*  https://varunbhandari.in/:splat  301!
+http://www.varunbhandari.in/*  https://varunbhandari.in/:splat  301!
+
+# Fallback for missing pages
+/*  /404.html  404
