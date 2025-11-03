@@ -402,7 +402,8 @@ html[data-theme="dark"] #navbar {
 
 .hero-content {
     width: 100%;
-    padding-left: 10%;
+    padding: 40px 20px;
+    /* Top/Bottom, Left/Right */
 }
 
 .hero-title {
@@ -1208,12 +1209,24 @@ html.theme-transition * {
 }
 
 @media (max-width: 480px) {
+    .hero-content {
+        padding: 30px 16px;
+        /* Smaller padding on very small phones */
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        /* Reduce title size on mobile */
     }
 
     .hero-subtitle {
         font-size: 1.2rem;
+        /* Reduce subtitle size */
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        /* Reduce description size */
     }
 
     .section {
@@ -1226,12 +1239,13 @@ html.theme-transition * {
 
     .hero-buttons {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
     }
 
     .btn {
-        padding: 10px 20px;
-        font-size: 0.95rem;
+        width: 100%;
+        /* Full width buttons on mobile */
+        padding: 12px 20px;
     }
 
     .social-links {
