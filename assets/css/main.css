@@ -1168,7 +1168,7 @@ html.theme-transition * {
     }
 
     .hero-content {
-        padding-left: 0;
+        padding: 5%;
     }
 
     .skills-legend {
